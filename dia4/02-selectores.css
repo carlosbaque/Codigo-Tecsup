@@ -1,0 +1,38 @@
+/* selector de etiqueta */
+/* los cambios son en casacada de padre a hijo,
+afectan a todo lo q esta dentro del mismo
+todos los section */
+/* section{ */
+    font-size: 100px
+}
+/* section{ */
+    font-size: 180px
+}
+/* al ser en casacada el ultimo section modificado
+seria el q valga mas, todos los p */
+/* p{ */
+    font-size: 80px
+}
+/* al ser p mas especifico es de donde se toma valores */
+
+/* todos los parrafos y todos los span */
+span{
+   color: red;
+}
+/* todos los span que sean hijos en cualquier nivel de p*/
+p span{
+    color: blue;
+}
+/* todos los p que sean hijos directos de section */
+section > p {
+    color: green;
+}
+/* todos los p que esten procedidos por un h1 */
+h1 + p {
+    color: orangered;
+}
+/* selector * todos los elementos de la pagina que
+no tengan estilo*/
+*{
+    color: blueviolet;
+}

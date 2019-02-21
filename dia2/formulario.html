@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario</title>
+</head>
+<body>
+    <h5>FORMULARIO</h5>
+    <hr>
+    <p>
+        <label for="name">Nombres:</label>
+        <input type="text" name="nombres" id="name"
+        placeholder="nombres y apellidos"
+        required>
+    </p>
+    <p>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="M" required>
+        <label for="fem">Femenino</label>
+        <input type="radio" name="genero" id="fem" value="F" required>
+        <label for="ne">No especifica</label>
+        <input type="radio" name="genero" id="ne" value="N" required
+        checked>
+    </p>
+    <p>
+        <label for="auto">auto</label>
+        <input type="checkbox" name="auto" value="aut" id="auto">
+        <label for="moto">moto</label>
+        <input type="checkbox" name="moto" value="mot" id="moto">
+        <label for="bici">bici</label>
+        <input type="checkbox" name="bici" value="bic" id="bici">
+    </p>
+    <p>
+        <label for="Mensaje">Mensaje</label>
+        <textarea name="mensaje" 
+        id="mensaje" 
+        cols="30" 
+        rows="10"
+        minlength="50"
+        maxlength="100"
+        placeholder="ingrese su mensaje"></textarea>
+    </p>
+    <p>
+        <label for="distrito">Distrito</label>
+        <select name="distrito" id="distrito">
+            <option value="0">seleccione...</option>
+            <option value="1">Miraflores</option>
+            <option value="2">Paucarpata</option>
+            <option value="3">Cayma</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit"
+        value="Inicio">
+    </p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <!-- CONJUNTO DE ELEMENTOS PARA INGRESAR DATOS -->
+    <hr/>
+    <!-- action=ruta o direccion de destinno hacia donde los datos del formulario seran enviados -->
+    <!-- method get =verbo http para enviar los datos a traves de la URL visible x el usuario -->
+    <!-- method post =verbo http para enviar los datos a traves del servidor invisible por el usuario -->
+    <form action="./procesar.html" method="GET">
+        <input type="text">
+        <input type="text">
+
+    </form>
+
+    <hr>
+    <form action="./procesar.html" method="POST"></form>
+    <p>
+        <label>nombres:</label>
+        <input type="text" name="nombres" id="idnombre" required>
+    </p>
+    <p>
+        <label for="idnombre">idnombre</label>
+        <input type="text" required
+        minlength="10" maxlength="20">
+    </p>
+    <p>
+        <label>edad:</label>
+        <input type="number">
+    </p>
+    <br/>
+    <input type="text">
+    <!-- id unico por elemento en el FRONT -->
+    <!-- class compartido por uno y mas elementos FRONTS -->
+    <!-- name atributo unico por elementos en el BACK o formulario -->
+
+    <p>
+        <!-- label representa a un texto, y tiene la etiqueta for que es exclusiva para ir
+        de la mano con el input -->
+        <!-- for = va el id del input al que acompaña -->
+        <label>Email:</label>
+        <input type="email" name="email" required>
+            <!-- required hace que el complete todos los campos -->
+    </p>
+    <p>
+        <label >fecha de nacimiento</label>
+        <input type="date" name="fecha" required>
+    </p>
+    <p>
+        <input type="submit" value="iniciar secion" required>
+    </p>
+    <br/>
+
+    <P>
+        <label for="Edad">Edad</label>
+        <input type="number" required
+        placeholder="fecha de nacimiento"
+        min="18" max="60">
+    </P>
+    <p><input type="submit" value="inicio" required></p>
+    <p>
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" 
+            name="password"
+            id="idcontraseña"
+            pattern=".{6,}"
+            title="Joven! minimo 6 caracteres please"
+            required>
+    </p>
+    
+</body>
+</html>

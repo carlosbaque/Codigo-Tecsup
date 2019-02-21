@@ -1,0 +1,75 @@
+/* #id  .class */
+/* todos los elementos con id */
+#twoparrafo{
+    color: blue;
+    font-size: 20px;
+}
+#treeparrafo{
+    color: brown;
+    font-size: 30px;
+}
+#unparrafo{
+    color: green;
+    font-size: 25px;
+}
+/* todos los elementos con class */
+.vparrafos{
+    color: crimson;
+    font-size: 32px;
+}
+/* mas especifico de class dentro de un section */
+section .otroparrafo{
+    color: chartreuse;
+}
+/* no manda sobre el otro que es mas especifico, pero 
+afecta a los demas q no tienen estilo */
+.otroparrafo{
+    color: darkgoldenrod;
+}
+/* afectaria a todos los span dentro de cualquier nivel
+de los elementos class */
+.otroparrafo span{
+    color: violet;
+}
+/* para todos los div que tengan class  */
+div.otroparrafo{
+    color: darkseagreen;
+    font-size: 25px;
+}
+/* id que le puse a un section y toda la seccion fue 
+puesta con estilo en cuadro */
+#unsection{
+    border: 1px solid red;
+}
+/* es mas especifico para los que tienen el atributo
+name */
+p[name=""]{
+    color: yellow;
+}
+pseudoclases
+/* nth-child(#) aplica el estilo al elemento que ocupa
+la posicion dada entre todos sus similares
+/* la cuenta inicia en 1 */
+#tabla1 tr:nth-child(1){
+color: brown;
+font-size: 20px;
+}
+/* darle estilo dentro de una tabla */
+tr:nth-child(2){
+    color: yellowgreen;
+    font-size: 20px;
+}
+#tabla2 tr:nth-child(odd){
+    background-color: aqua;
+}
+#tabla2 tr:nth-child(even){
+    background-color: gray; 
+} 
+
+#tabla3 tr:nth-child(odd){
+    background-color: blueviolet;
+}
+/* todos los div, excepto los que tengan otra clase "otraclase" */
+div :not(.otroparrafo){
+    font-size: 40px;
+}
