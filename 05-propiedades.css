@@ -1,0 +1,25 @@
+/* TRANSFORMACIONES */
+/* scale = cambia tamaño del elemento tanto en x como en y */
+/* rotate = angulo(#deg) rota el elemento en grados */
+/* translate = mueve el elemento de su posicion original */
+/* skew = angulo(#deg) inclina el elemento */
+/* obs: para aplicar mas de una transformacion, deben de incluir 
+todas en una misma linea */
+header{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    /* transform: scale(0.5, 1.2) ; */
+    transform: scale(1.1);
+    /* transition duration : duracion del hover */
+    /* transition delay : tiempo para q se ejecute la animacion */
+    transition-delay: 1s;
+    transition: 0.5s;
+    /* transition time finction */
+    transition-timing-function: ease-in-out;
+}
+/* hover asigna el estilo indicado cuando el mouse pasa sobre el elemento*/
+header:hover{
+    transform: scale(1.5);
+}

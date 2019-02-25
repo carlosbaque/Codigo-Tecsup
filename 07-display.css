@@ -1,0 +1,16 @@
+/* DISPLAY: todos los elementos estructurales de HTML definen la propiedad display en BLOCK */
+/* block: significa q el elemento va ocupar todo el ancho de la pantalla */
+/* header, footer, main, section, aside, p, div,  */
+/* inline: el elemento ocupa solo el ancho de su espacio en una misma linea */
+/* inline-block: el elemento ocupa el ancho de su espacio en una misma linea pero respeta sus atributos en width y height  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* *{:selecciona todo margin y paddin para controlar nosotros mismos los margenes */
+div{
+    border: 1px solid green;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+}

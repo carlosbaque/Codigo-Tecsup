@@ -1,0 +1,116 @@
+/* before: inyecta un elemento antes del elemento seleccionado */
+/* tambien puede ser una url, imagen, git */
+#div1::before{
+    content: ">>>>>>";
+    border: 1px solid red;
+}
+#div2::after{
+    content: "<<<<<<";
+    border: 2px solid  blue;
+}
+/* para crear un animacion se hace uso de
+@keyframes y se le asigna un nombre a esta animacion */
+header{
+    border: 2px solid yellow;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    /* animation:{nombre de animacion} {tiempo} {funcion bezier} 
+    {delay} {num_veces_a_repetir | infinity } {sentido_ejecucio|normal}
+    {forma_de_finalizacion|none} */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: mianimacion;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 0;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes mianimacion{
+    0%{ 
+        background-color: red;
+    }
+    25%{
+        background-color: violet;
+        transform: scale(2) rotate(45deg);
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: yellow;
+        transform: scale(0.2) rotate(-45deg);
+    }
+    100%{
+        background-color: red;
+    }
+}
+img{
+    margin: 20px;
+    padding: 20px;
+    animation-name: imagen;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+}
+@keyframes imagen{
+    0%{
+        transform: translate( 0, 0);
+
+    }
+    25%{
+        transform: translate( 500px, 0);
+
+    }
+    50%{ 
+        transform: translate( 500px, 500px);
+
+    }
+    75%{
+        transform: translate( 0, 500px);
+
+    }
+    100%{ 
+        transform: translate( 0, 0);
+    }
+}
+
+#hrimag1{
+    margin: 500px;
+    border: 1px solid blue;
+}
+
+/* establecer letra o formatos de letra de la pagina */
+html{
+    font-size: 16px;
+}
+/* toma la medida inicial de todos los elementos */
+/* 1rem equivale a 16px */
+#divo1{
+    /* 2rem es igual a 32px */
+    font-size: 2rem;
+}
+#parr{
+    /* 1em es 32px por heredar el tamaño del padre */
+    /* 1.5em = 48px */
+    font-size: 1.5em;
+}
+/* em (relativo al padre) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

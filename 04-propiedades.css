@@ -1,0 +1,42 @@
+header{
+    border: 1px solid rgb(0, 0, 0);
+    /* boxsahadow: color , x, y, difuminado */
+    /* inset = al final del difuminado hace q la sombre ingrese
+     box-shadow: rgb(123, 123, 123) 10px 15px 10px inset;*/
+    box-shadow: rgb(24, 95, 54) 10px 15px 10px;
+/* gradiente = background
+prefijo webkit, compatibilidad para los navegadores = chrome y safari
+prefijo moz = mozilla 
+prefijo o = opera*/
+    background: -webkit-linear-gradient( 45deg, transparent, red 15%, green 20%, blue 60%);
+     /*(de donde empieza puede ser en posicion o en grados , color inicial, color final)
+   @  background: -webkit-linear-gradient(top, red, blue) */
+}
+body{
+    background: -webkit-radial-gradient( center, circle, #00bf8f, #001510);
+}
+h1{  
+    /*text.shadow:le da sombra al texto, en el text no va inset */    
+    /* esta forma le da borde al texto: 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+    text-shadow: rgb(255, 23, 50)5px 5px 5px;
+}
+section{
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    filter: blur(2);
+}
+img{
+    filter: grayscale(0.5);
+}
+/* FILTROS 
+blur = difuminado valores de 1px a 10px
+grayscale = convierte los colores de una imagen a escala de grises
+invert = invierte los colores y produce un negativo de 0.1 a 1
+opacity = cambia la capacidad del elemento 0:tranparente 1:opaco
+brightness = cambia brillo de la imagen 0.1 a 10*/
